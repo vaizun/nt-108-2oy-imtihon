@@ -1,0 +1,179 @@
+#products {
+  .card {
+    height: 500px;
+    padding: {
+      bottom: 1rem;
+    }
+    h5 {
+      line-height: 1rem;
+    }
+    & img,
+    h5,
+    p,
+    .p1,
+    a {
+      padding: 1rem;
+    }
+
+    .card-btn {
+      width: 18.5rem;
+      height: 1rem;
+      padding: 1rem 2rem;
+      font-size: 20px;
+      text-align: center;
+      background: $sariq3;
+      ul {
+        all: unset;
+      }
+      i {
+        margin-right: 1rem;
+      }
+    }
+  }
+  .products-card {
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: center;
+    justify-content: center;
+    gap: 2rem;
+    padding: {
+      top: 5rem;
+      bottom: 5rem;
+    }
+  }
+  .partners {
+    grid-template-columns: repeat(7, 1fr);
+    justify-content: space-between;
+    gap: 1rem;
+  }
+
+  //   Adoptation
+  .adoptation {
+    background: $sariq;
+    width: 80vw;
+    height: 50vh;
+    margin: 0 auto;
+    border-radius: 2rem;
+    position: relative;
+    overflow: hidden;
+
+    .main-shape {
+      width: 700px;
+      height: 500px;
+      background: $sariq3;
+      border-radius: 5rem;
+      position: absolute;
+      top: 0;
+      left: -30%;
+      transform: rotate(330deg) translateX(40%) translateY(10%);
+      z-index: 1;
+    }
+    &-content {
+      transform: rotate(30deg) translateX(25%) translateY(40%);
+      p {
+        all: unset;
+        text-align: left;
+        display: flex;
+
+        font-size: 20px;
+        width: 450px;
+        height: 80px;
+      }
+      .btns {
+        display: flex;
+        justify-content: flex-start;
+        gap: 1rem;
+        padding: {
+          top: 1rem;
+          right: 10rem;
+        }
+      }
+      .btn1,
+      .btn2 {
+        width: 10rem;
+      }
+
+      .btn1 {
+        height: 3.3rem;
+      }
+    }
+
+    &-shape {
+      width: 700px;
+      height: 300px;
+      background: $sariq1;
+      border-radius: 5rem;
+      position: absolute;
+      top: 0;
+      left: 60%;
+      transform: rotate(320deg) translateX(-30%) translateY(30%);
+      img {
+        transform: translateY(-50%) translateX(30%) rotate(50deg);
+      }
+    }
+  }
+}
+
+@media (max-width: $md) {
+  #products .container {
+    .newsbtn {
+      width: 10rem;
+      height: 3rem;
+    }
+
+    a.product-card-btn {
+      width: 10rem;
+      height: 3rem;
+    }
+    .grid {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1rem;
+      .card {
+        height: 450px;
+
+        h4 {
+          font-weight: 700;
+          font-size: 24px;
+          line-height: 1rem;
+        }
+        p {
+          font-weight: 500;
+          font-size: 16px;
+          line-height: 0.2rem;
+        }
+
+        h5 {
+          font-weight: 700;
+          font-size: 16px;
+          line-height: 1rem;
+        }
+        .p1 {
+          font-weight: 500;
+          font-size: 12px;
+          line-height: 1rem;
+        }
+        .card-btn {
+          width: 12rem;
+          height: 2rem;
+          text-align: center;
+          font-weight: 700;
+          font-size: 16px;
+          line-height: 20px;
+          margin: 0 auto;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+      }
+    }
+  }
+  .partners,
+  .adoptation {
+    display: none;
+  }
+}
+
+@media (max-width: $sm) {
+  #products {
+    display: none;
+  }
+}

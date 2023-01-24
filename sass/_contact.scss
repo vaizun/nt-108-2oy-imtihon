@@ -1,0 +1,187 @@
+#contact {
+  background: $sariq3;
+  margin: 0 auto;
+  border-top-left-radius: 2rem;
+  border-top-right-radius: 2rem;
+  width: 98.5vw;
+  height: 50vh;
+
+  .form-txt {
+    background: $kok0;
+    border-radius: 1rem;
+    width: 80vw;
+    height: 15vh;
+    margin: 0 auto;
+
+    h4 {
+      color: $qora0;
+      padding: 0 1rem;
+      width: 450px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+
+  fieldset {
+    align-items: center;
+    width: 60%;
+    height: 70%;
+    display: flex;
+    border-radius: 1rem;
+    padding: 1rem;
+    margin: 1rem;
+    background: $qora0;
+    border: 0;
+  }
+
+  input {
+    width: 80%;
+    height: 2.5rem;
+    border: 1px solid $qora20;
+    border-radius: 0.5rem;
+    padding: 1rem;
+  }
+
+  button {
+    width: 10rem;
+    margin-left: 1rem;
+    font-size: 1rem;
+  }
+
+  .end-links {
+    padding: 2rem;
+    border-bottom: 0.2rem solid $sariq1;
+    border-radius: 2px;
+  }
+
+  .end-navbar {
+    gap: 5rem;
+    font-size: 16px;
+    font-weight: 500;
+  }
+
+  .social-link {
+    font-size: 25px;
+    font-weight: 500;
+    gap: 2rem;
+  }
+}
+
+@media (max-width: $md) {
+  #contact {
+    height: 65vh;
+
+    .container {
+      .form-txt {
+        width: 100%;
+        height: 18vh;
+        padding: 1rem;
+        margin: 0 auto;
+        display: inline-block;
+        h4 {
+          font-weight: 700;
+          font-size: 18px;
+          line-height: 32px;
+        }
+      }
+      fieldset {
+        width: 90%;
+        height: 50%;
+        padding: 1rem;
+
+        input {
+          width: 50%;
+        }
+
+        .footer-btn {
+          width: 50%;
+          border-radius: 1rem;
+        }
+      }
+      .end-links {
+        display: inline-block;
+
+        .end-navbar {
+          margin-bottom: 2rem;
+        }
+
+        .social-link {
+          display: flex;
+          justify-content: center;
+
+          gap: 3rem;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: $sm) {
+  #contact {
+    width: 100vw;
+    height: 40vh;
+
+    .container {
+      .form-txt {
+        width: 100%;
+        height: 40vh;
+        padding: 1rem;
+        margin: 0 auto;
+        display: inline-block;
+        h4 {
+          font-weight: 700;
+          font-size: 18px;
+          line-height: 32px;
+          width: 400px;
+        }
+
+        p {
+          all: unset;
+          font-size: 16px;
+          font-weight: normal;
+          line-height: 2rem;
+          margin-bottom: 1rem;
+        }
+      }
+      fieldset {
+        display: inline-block;
+        width: 90%;
+        height: 50%;
+        padding: 1rem;
+
+        input {
+          width: 100%;
+          margin-bottom: 1rem;
+        }
+
+        .footer-btn {
+          width: 100%;
+          border-radius: 1rem;
+          padding: 1rem;
+
+          margin: 0 auto;
+        }
+      }
+      .end-links {
+        display: inline-block;
+
+        .end-navbar {
+          all: unset;
+          margin-bottom: 1rem;
+          list-style: none;
+          display: flex;
+          justify-content: center;
+          gap: 1rem;
+        }
+
+        .social-link {
+          display: flex;
+          // justify-content: center;
+
+          gap: 0.5rem;
+        }
+      }
+    }
+  }
+}

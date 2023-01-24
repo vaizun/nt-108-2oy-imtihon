@@ -1,0 +1,50 @@
+.load {
+  width: 100vh;
+  height: 100vh;
+}
+
+.loading {
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
+  margin: 0 auto;
+  border: 100px dotted #000;
+  transform: scale(0);
+  animation: loading 3s;
+  position: fixed;
+  top: 25%;
+  left: 35%;
+  z-index: 9999;
+}
+
+@keyframes loading {
+  0% {
+    transform: rotate(0) scale(1);
+  }
+
+  25% {
+    opacity: 70%;
+  }
+  50% {
+    opacity: 50%;
+  }
+  100% {
+    transform: rotate(360deg) scale(1);
+    opacity: 0;
+  }
+}
+@media (max-width: $sm) {
+  .load {
+    width: 100vh;
+    height: 100vh;
+  }
+  .loading {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin: 0 auto;
+    top: 25%;
+    left: 25%;
+    border: 25px dotted #000;
+  }
+}

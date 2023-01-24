@@ -1,0 +1,244 @@
+#news {
+  .card {
+    height: 400px;
+
+    padding: {
+      bottom: 1rem;
+    }
+  }
+}
+
+.card img,
+h5,
+p,
+.p1 {
+  text-align: center;
+  padding: 1rem;
+  line-height: 0;
+}
+
+.grid {
+  grid-template-columns: repeat(4, 1fr);
+  justify-items: center;
+  gap: 2rem;
+  padding: {
+    top: 5rem;
+    bottom: 5rem;
+  }
+}
+
+.one {
+  background: $kok0;
+  height: 50vh;
+  border-radius: 2rem;
+  position: relative;
+  overflow: hidden;
+
+  div {
+    z-index: 10;
+  }
+
+  .shape {
+    width: 700px;
+    height: 350px;
+    background: $kok1;
+
+    border-radius: 5rem;
+    position: absolute;
+    top: 0;
+    left: -30%;
+    transform: rotate(30deg) translateX(50%) translateY(10%);
+    z-index: 1;
+
+    img {
+      transform: translateY(-40%) translateX(0) rotate(-30deg);
+    }
+  }
+
+  &-shape {
+    width: 700px;
+    height: 500px;
+    background: $sariq3;
+    border-radius: 5rem;
+    position: absolute;
+    top: 0;
+    left: 60%;
+    transform: rotate(210deg) translateX(25%) translateY(10%);
+  }
+
+  .content {
+    transform: rotate(150deg) translateX(20%) translateY(-10%);
+    p {
+      all: unset;
+      text-align: right;
+      display: flex;
+      justify-content: flex-start;
+      font-size: 20px;
+      width: 450px;
+    }
+    .btns {
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      padding: {
+        top: 1rem;
+        right: 10rem;
+      }
+    }
+    .btn1,
+    .btn2 {
+      width: 10rem;
+    }
+
+    .btn1 {
+      height: 3.3rem;
+    }
+  }
+}
+
+@media (max-width: $md) {
+  #news .container {
+    .showbtn11 {
+      display: none;
+    }
+    .newsbtn {
+      width: 10rem;
+      height: 3rem;
+    }
+    .grid {
+      grid-template-columns: repeat(2, 1fr);
+      .card {
+        height: 370px;
+        h5 {
+          font-weight: 700;
+          font-size: 14px;
+          line-height: 0.5rem;
+        }
+        p {
+          font-weight: 500;
+          font-size: 12px;
+          line-height: 0.5rem;
+        }
+      }
+    }
+    .one {
+      width: 70vw;
+      height: 80vh;
+      .shape {
+        transform: translateX(0%) translateY(138%) rotate(40deg);
+        // background: #000;
+        img {
+          width: 100%;
+          height: 100%;
+          transform: rotate(-30deg) translateX(10%) translateY(-20%);
+        }
+      }
+      .one-shape {
+        transform: translateX(-55%) translateY(-45%) rotate(295deg);
+
+        .content {
+          transform: rotate(65deg) translateX(20%) translateY(55%);
+
+          h2 {
+            font-weight: 800;
+            font-size: 36px;
+            line-height: 54px;
+            text-align: center;
+            padding-right: 7rem;
+            padding-top: 2rem;
+          }
+
+          h3 {
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 36px;
+            text-align: center;
+            padding-right: 7rem;
+          }
+          p {
+            width: 342px;
+            height: 54px;
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 18px;
+            text-align: center;
+            padding-left: 7rem;
+            padding-bottom: 1rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: $sm) {
+  #news .container {
+    .newsbtn {
+      display: none;
+    }
+
+    .grid {
+      grid-template-columns: repeat(2, 1fr);
+      .card {
+        height: 350px;
+        h5 {
+          font-weight: 700;
+          font-size: 14px;
+          line-height: 1rem;
+        }
+        p {
+          font-weight: 500;
+          font-size: 12px;
+          line-height: 0.5rem;
+        }
+      }
+    }
+    .one {
+      width: 100vw;
+      height: 80vh;
+
+      .shape {
+        transform: translateX(0%) translateY(138%) rotate(40deg);
+        // background: #000;
+        img {
+          width: 100%;
+          height: 100%;
+          transform: rotate(-30deg) translateX(0%) translateY(-20%);
+        }
+      }
+      .one-shape {
+        transform: translateX(-55%) translateY(-45%) rotate(295deg);
+
+        .content {
+          transform: rotate(65deg) translateX(20%) translateY(55%);
+
+          h2 {
+            font-weight: 800;
+            font-size: 36px;
+            line-height: 54px;
+            text-align: center;
+            padding-right: 7rem;
+            padding-top: 2rem;
+          }
+
+          h3 {
+            font-weight: 700;
+            font-size: 20px;
+            line-height: 36px;
+            text-align: center;
+            padding-right: 7rem;
+          }
+          p {
+            height: 54px;
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 18px;
+            text-align: center;
+            padding-left: 7rem;
+            padding-bottom: 1rem;
+          }
+        }
+      }
+    }
+  }
+}
